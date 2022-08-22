@@ -5,8 +5,7 @@ import time
 
 ssh_client = paramiko.SSHClient()
 ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-ssh_client.connect(hostname='10.11.8.1',username='admin',password='admin@2021')
-
+ssh_client.connect(hostname='<Your_IP_Gateway>',username='admin',password='<Your_Credentials>')
 conn = ssh_client.invoke_shell()
 
 
